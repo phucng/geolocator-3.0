@@ -10,14 +10,18 @@ tar -zxvf res/res.tar.gz
 wget -P GeoNames/ http://download.geonames.org/export/dump/allCountries.zip
 wget -P GeoNames/ http://download.geonames.org/export/dump/alternateNames.zip
 wget -P GeoNames/ http://download.geonames.org/export/dump/admin1CodesASCII.txt
-wget -P Geonames/ http://download.geonames.org/export/dump/admin2Codes.txt
+wget -P GeoNames/ http://download.geonames.org/export/dump/admin2Codes.txt
 wget -P GeoNames/ http://download.geonames.org/export/dump/iso-languagecodes.txt
 wget -P GeoNames/ http://download.geonames.org/export/dump/timeZones.txt
 
-unzip GeoNames/allCountries.zip 
-unzip GeoNames/alternateNames.zip 
+unzip GeoNames/allCountries.zip
+unzip GeoNames/alternateNames.zip
 mv allCountries.txt GeoNames/
 mv alternateNames.txt GeoNames/
 
 rm GeoNames/allCountries.zip
 rm GeoNames/alternateNames.zip
+
+mkdir GazIndex
+# execute edu.cmu.geolocator.resource.gazindexing.CollabGazCreater.main()
+java -jar indexer.jar GeoNames GazIndex
