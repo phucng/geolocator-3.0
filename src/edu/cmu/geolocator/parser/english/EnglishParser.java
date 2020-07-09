@@ -40,8 +40,8 @@ import edu.cmu.geolocator.parser.STBDParser;
 import edu.cmu.geolocator.parser.TPParser;
 import edu.cmu.geolocator.parser.Universal.ACE_MTNERParser;
 import edu.cmu.geolocator.parser.utils.ParserUtils;
-import edu.cmu.lti.weizh.fda.FDAGeoParser;
-import edu.cmu.lti.weizh.models.NamedEntity;
+//import edu.cmu.lti.weizh.fda.FDAGeoParser;
+//import edu.cmu.lti.weizh.models.NamedEntity;
 
 /**
  * The aggregation of all the parsers for English.
@@ -59,7 +59,7 @@ public class EnglishParser {
 
   private TPParser tp;
 
-  private FDAGeoParser fda;
+//  private FDAGeoParser fda;
   
   private FreebaseSearch Fsearch;
 

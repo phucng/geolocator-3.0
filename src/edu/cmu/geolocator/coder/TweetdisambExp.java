@@ -256,7 +256,7 @@ public class TweetdisambExp {
       String tweet = part[0];
       Tweet t = new Tweet(tweet);
       EuroLangTwokenizer.tokenize(t.getSentence());
-      String locs = part[1];
+      String locs = part[1];	// The file contains labeled tweets.
       String lat = part[2];
       String lon = part[3];
       String userLoc = part[4].trim();
