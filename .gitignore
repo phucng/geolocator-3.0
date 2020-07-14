@@ -1,1 +1,4 @@
 /bin
+/target/
+src/edu/cmu/test/CmdLineTest.java
+src/edu/cmu/test/PipelineTest.java
